@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Onboarding</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="cat1.jpg" alt="Cute Cat 1">
+            <img src="cat2.jpg" alt="Cute Cat 2">
+            <img src="cat3.jpg" alt="Cute Cat 3">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>🐱 Welcome to Cat Boarding! 🐾</h1>
+        <p>Fill out the details to onboard your feline friend!</p>
+
+        <form id="catForm">
+            <label>Cat Owner Name: <input type="text" id="ownerName" required></label>
+            <label>Contact Number: <input type="tel" id="contactNumber" required></label>
+            <label>Email id: <input type="email" id="emailId" required></label>
+            <label>Address: <textarea id="address" required></textarea></label>
+            <label>Cat Name: <input type="text" id="catName" required></label>
+            <label>Cat Breed: <input type="text" id="catBreed" required></label>
+            <label>Cat DOB: <input type="date" id="catDOB" required></label>
+            <label>Cat Age: <input type="number" id="catAge" required></label>
+            <label>Vaccination completed?: <input type="checkbox" id="vaccinationCompleted"></label>
+            <label>Last vaccination date: <input type="date" id="lastVaccinationDate"></label>
+            <label>Pending vaccine (if any): <input type="text" id="pendingVaccine"></label>
+            <label>Due Vaccination Date: <input type="date" id="dueVaccinationDate"></label>
+            <label>Last Deworming Date: <input type="date" id="lastDewormingDate"></label>
+            <label>Health condition (if any): <input type="text" id="healthCondition"></label>
+            <label>Special Request (if any): <input type="text" id="specialRequest"></label>
+            <label>Cat boarding type:
+                <select id="boardingType">
+                    <option value="with food">With Food</option>
+                    <option value="without food">Without Food</option>
+                </select>
+            </label>
+            <label>Preferred homemade wet food (Additional charges may apply): <input type="text" id="wetFood"></label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
